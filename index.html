@@ -1,0 +1,76 @@
+<!--
+Web Programming (CIT2011)
+Jordan Liu (1506757)
+Individual Assignment 2
+-->
+
+
+<!doctype html>
+<html>
+
+<head>
+    <title>MathRunner</title>
+    <link rel="icon" href="images/favicon.ico?v=1.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <script src="js/math.js"></script>
+</head>
+
+<body>
+    <!-- Container -->
+    <div id="container">
+        <div id=header>
+            <div><a href="index.html"><img class="logo" src="images/logo.png"></a></div>
+
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="about.html">About Us</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <!-- Content -->
+        <div id=content>
+            <h2>Welcome!</h2>
+            <p class="info">Please fill out all required fields (<span class="red">*</span>) to continue. You must be between the ages of <strong>9 - 12</strong>. </p>
+            <div class="shadow-box center">
+                <!-- Form -->
+                <form name="form" action="math.html" onsubmit="return validateForm()">
+                    <label for="FirstName">First Name <span class="red">*</span></label><br>
+                    <input type="text" id="FirstName" name="FirstName" required>
+
+                    <br><label for="MiddleName">Middle Name</label><br>
+                    <input type="text" id="MiddleName" name="MiddleName">
+
+                    <br><label for="LastName">Last Name <span class="red">*</span></label><br>
+                    <input type="text" id="LastName" name="LastName" required>
+
+
+
+                    <br><label for="dob">Gender <span class="red">*</span></label><br>
+                    <select name="Gender">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="Female">Female</option>
+                    <option value="Female">Male</option>
+                    </select>
+
+
+                    <br><label for="dob">Date of Birth <span class="red">*</span></label><br>
+                    <input onblur="calculateAge()" type="date" id="dob" name="DateOfBirth" required style="margin-bottom: 10px;">
+
+                    <br><label for="user_picture">Picture Upload</label><br>
+                    <input type="file" id="user_picture" name="UserPicture">
+                    <button class="submit" type="submit">Continue</button>
+                </form>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer></footer>
+    </div>
+
+</body>
+
+</html>
+
+<!-- End -->

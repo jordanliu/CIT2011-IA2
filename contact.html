@@ -1,0 +1,59 @@
+<!--
+Web Programming (CIT2011)
+Jordan Liu (1506757)
+Individual Assignment 2
+-->
+
+
+<!doctype html>
+<html>
+
+<head>
+    <title>MathRunner</title>
+    <link rel="icon" href="images/favicon.ico?v=1.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id=header>
+            <div><a href="index.html"><img class="logo" src="images/logo.png"></a></div>
+
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="about.html">About Us</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div id=content>
+            <div class="shadow-box width margin center">
+                <h1>Contact</h1>
+
+                <form>
+                    <label for="Name">Name <span class="red">*</span></label><br>
+                    <input type="text" id="Name" name="Name" required>
+                    <label for="Email">Email</label><br>
+                    <input type="email" id="Email" name="Email">
+                    <label for="Subject">Subject <span class="red">*</span></label><br>
+                    <input type="text" id="Subject" name="Subject" required>
+                    <label for="body">Body <span class="red">*</span></label><br>
+                    <textarea rows="5" id="body"></textarea>
+                    <button title="Contact form is currently being revamped, send us an email: help@mathrunner.com" id="disabled" class="submit" type="submit" value="Submit" disabled>Send Message</button>
+                </form>
+
+                <div class="socialmedia">
+                    <a href="https://facebook.com" target="_blank"><img src="images/fb.png"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a>
+                    <a href="https://github.com/jordanliu" target="_blank"><img src="images/github.png"></a>
+                </div>
+
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
